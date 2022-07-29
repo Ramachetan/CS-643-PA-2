@@ -16,6 +16,8 @@ spark = SparkSession(sc)
 
 train_df = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('TrainingDataset.csv')
 test_df = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('ValidationDataset.csv')
+#Undo this line to test the dataset with your datasettest_df = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('ValidationDataset.csv')
+#test_df = spark.read.format('csv').options(header='true', inferSchema='true', sep=';').load('TestDataset.csv')
 
 print("Data loaded into Spark.")
 print(train_df.toPandas().head())
