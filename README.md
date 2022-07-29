@@ -1,7 +1,6 @@
 # CS643-AWS-ProgAssgn-2
 
-Introduction:
-This final programming assignment requires you to build an Apache Spark ML lib application that will train a machine learning model in parallel on a cluster of four slaves and one master. This guide explains how to set up the cluster, EC2 instances, and Docker images step by step. The parallel training methods are also detailed, as are the steps to run the prediction application on a single system without docker and on a single machine by downloading the docker image, instantiating a container, and running the container on a single machine. The source is available on GitHub, and the image is available on Docker Hub. This programming assignment's implementation makes use of Apache Spark and Hadoop. 
+ 
 
 Step 1: Launch an instance
 You can launch a Linux instance using the AWS Management Console as described in the following procedure. 
